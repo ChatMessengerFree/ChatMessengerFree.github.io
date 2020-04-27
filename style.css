@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(fonts/Montserrat-ExtraLight.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: roboto; /* Гарнитура шрифта */
+    src: url(fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+   }
+body {
+	background: url('img/bg.png') no-repeat;
+	background-position: 50% 36%;
+	background-size: cover;
+}
+.download {
+	background: #36ff36;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius:  25px;
+	width: 60%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.downloadHref {
+	text-align: center;
+}
+.downSender {
+	text-decoration: none;
+	font-family: Pompadur;
+	color: black;
+	font-size: 23px;
+}
+.downSender:hover {
+	color: red;
+}
+.whiteBlock {
+	background: white;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	height: 40%;
+}
+.avatar {
+	background: url('img/avatar.jpg') no-repeat;
+	background-size: 95%;
+	width: 160px;
+	height: 160px;
+	border: solid 2px white;
+	border-radius: 50%;
+	background-size: cover;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -85px;
+    margin: 0 auto;
+}
+.avatar:hover {
+	transition: 0.3s;
+	border: dashed 2px black;
+
+}
+.nickYamiki {
+	color: black;
+	z-index: 6;
+	text-align: center;
+	margin-top: 100px;
+	font-family: roboto;
+	font-size: 35px;
+}
+.vk-nickYamiki {
+	position: absolute;
+	right: 0;
+	left: 0;
+	background: url('img/vk.png') no-repeat;
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 1%
+}
+.vk-nickYamiki:hover {
+	width: 45px;
+	height: 45px;
+	margin-top: 0.9%
+}
+.blackBlock {
+	background: black;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 8%;
+	z-index: 3;
+}
+.nameFirm {
+	color: white;
+	z-index: 4;
+	text-align: center;
+	margin-top: 0.5%;
+	font-family: Pompadur;
+}
+.link {
+	z-index: 5;
+}
+@media (max-width: 700px) {
+	body {
+		background-position: 50% 10%;
+	}
+	.nickYamiki {
+		margin-top: 80px;
+	}
+	.downSender {
+		text-decoration: none;
+		font-family: Pompadur;
+		color: black;
+		font-size: 16px;
+	}
+}
